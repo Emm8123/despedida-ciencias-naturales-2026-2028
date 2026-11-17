@@ -98,6 +98,27 @@ h1 em{background:linear-gradient(100deg,#e8c76a 20%,#fff6c9 45%,#e8c76a 70%);bac
 .galeria img.in{opacity:1;transform:none}
 .galeria img.in:hover{transform:scale(1.03)}
 @media(prefers-reduced-motion:reduce){.w{transition:none;opacity:1;transform:none;filter:none}.leak,h1 em{animation:none}.shot{clip-path:none}}
+
+/* ===== ajuste celular: textos más juntos y proporcionados ===== */
+.huge,h1,.sub{text-wrap:balance}
+.card{min-height:64vh}
+@supports(height:100svh){.shot,.stage{height:100svh}}
+@media(max-width:640px){
+ .card{min-height:50vh;padding:6vh 6vw}
+ .kick{letter-spacing:.17em;font-size:.66rem;line-height:1.7;margin-bottom:12px}
+ h1{font-size:clamp(2.3rem,12vw,3.6rem)!important;line-height:1.06;letter-spacing:0}
+ h1 em{margin-top:4px}
+ .huge{font-size:clamp(2.1rem,10vw,3.3rem);line-height:1.1}
+ .huge.rv{letter-spacing:.02em}
+ .huge.rv.in{letter-spacing:0}
+ .huge.mid{font-size:clamp(1.65rem,7.2vw,2.25rem);line-height:1.2}
+ .sub{letter-spacing:.1em;font-size:.74rem;margin-top:14px;line-height:1.6}
+ .line{height:34px;margin-top:18px}
+ .rw{margin-top:20px}
+ section.galsec{padding:6vh 3vw}
+ .galeria{column-gap:8px}
+ .galeria img{margin-bottom:8px}
+}
 </style>
 </head>
 <body>
